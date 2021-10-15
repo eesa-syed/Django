@@ -21,11 +21,13 @@
     <title>Day-5</title>
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top bg-light">
+    <nav class="navbar navbar-default navbar-expand-lg navbar-fixed-top bg-light">
         <div class="nav container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}">Home</a>
             <ul class="nav navbar-nav navbar-right">
-                <a class="nav-item" href="register"><button class="nav nav-link active">Register</button></a>
+                <li class="nav"><a class="nav-item" href="{% url 'register' %}"><button class="nav btn btn-primary">Register</button></a>
+                </li>
+                <li class="nav"><a class="nav-item" href="admin"><button class="nav btn btn-default">Admin</button></a></li>
             </ul>
         </div>
     </nav>
